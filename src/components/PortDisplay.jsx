@@ -113,8 +113,8 @@ export function PortDisplay({ offerings }) {
             alignItems="center"
             justifyContent="center"
           >
-            {project.video?.endsWith("mov") ||
-            project.video?.endsWith("mp4") ? (
+            {project?.video?.endsWith("mov") ||
+            project?.video?.endsWith("mp4") ? (
               <Box
                 alignItems="center"
                 justifyContent="center"
@@ -126,7 +126,7 @@ export function PortDisplay({ offerings }) {
                   autoPlay
                   muted
                   loop
-                  src={project?.video}
+                  src={project?.video || ""}
                   width="auto"
                   height="300px"
                   style={{
@@ -137,42 +137,6 @@ export function PortDisplay({ offerings }) {
             ) : (
               <DisplayProjectType project={project} />
             )}
-            <Stack
-              width="100%"
-              spacing={2}
-              divider={<Divider />}
-              sx={{
-                jusitfyContent: "center",
-                alignItems: "center",
-                height: "100%",
-              }}
-            >
-              <Typography
-                variant="h3"
-                sx={{
-                  textTransform: "uppercase",
-                }}
-              >
-                {project?.name}
-              </Typography>
-              <Typography variant="body">{project?.description}</Typography>
-              <Stack direction="row" spacing={2}>
-                {(Array.isArray(project?.tooling) &&
-                  project?.tooling.map((tool, index) => (
-                    <Chip
-                      key={index}
-                      label={tool}
-                      variant="outlined"
-                      color="primary"
-                    />
-                  ))) ||
-                  []}
-              </Stack>
-
-              <a href={project?.link} target="_blank" rel="noopener noreferrer">
-                <Typography variant="body">Visit</Typography>
-              </a>
-            </Stack>
           </Stack>
         ))}
       </Stack>
