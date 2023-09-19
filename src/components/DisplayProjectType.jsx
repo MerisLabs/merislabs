@@ -5,8 +5,8 @@ export const DisplayProjectType = ({ project }) => {
     return null;
   }
 
-  const videoType = project.video.split(".")[1];
-  const imageSrc = `/images/${project.video}`;
+  const videoType = project?.video.split(".")[1];
+  const imageSrc = `/images/${projec?.video}`;
   const videoSrc = `${project?.video}`;
 
   const imageStyle = {
@@ -31,9 +31,9 @@ export const DisplayProjectType = ({ project }) => {
       );
     default:
       if (
-        project.video.startsWith("https://") ||
-        project.video.startsWith("http://") ||
-        project.video.startsWith("www.")
+        project.video?.startsWith("https://") ||
+        project.video?.startsWith("http://") ||
+        project.video?.startsWith("www.")
       ) {
         return (
           <iframe
