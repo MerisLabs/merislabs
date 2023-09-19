@@ -10,9 +10,6 @@ const Main = styled(Stack)`
 	padding: 2rem 2rem;
 	color: #fff;
 `;
-
-import { Grid } from "@mui/material";
-import Image from "next/image";
 import { PortDisplay } from "@/components/PortDisplay";
 import { offerings } from "@/constants/offerings.1";
 import Navigation from "@/components/navigation";

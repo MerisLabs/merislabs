@@ -103,7 +103,7 @@ export function PortDisplay({ offerings }) {
         justifyContent={"center"}
         width="100%"
       >
-        <FormControl sx={{ m: 1, width: "100%" }} fullWidth>
+        {/* <FormControl sx={{ m: 1, width: "100%" }} fullWidth>
           <InputLabel
             fullWidth
             id="demo-multiple-chip-label"
@@ -194,9 +194,10 @@ export function PortDisplay({ offerings }) {
               </MenuItem>
             ))}
           </Select>
-        </FormControl>
+        </FormControl> */}
       </Stack>
       <Stack
+        w="100%"
         spacing={5}
         // height="100vh"
         p={5}
@@ -210,11 +211,23 @@ export function PortDisplay({ offerings }) {
         justifyContent="flex-start"
       >
         {projectsToDisplay?.map((project, index) => (
-          <Stack direction={"column"} spacing={5} key={index}>
+          <Stack
+            direction={"column"}
+            spacing={5}
+            key={index}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
+          >
             {/* if a video use video, else use DisplayProjectType */}
             {project.video?.endsWith("mov") ||
             project.video?.endsWith("mp4") ? (
-              <Box>
+              <Box
+                alignItems="center"
+                justifyContent="center"
+                width="100%"
+                display="flex"
+              >
                 <video
                   controls
                   autoPlay
@@ -237,6 +250,7 @@ export function PortDisplay({ offerings }) {
               divider={<Divider />}
               sx={{
                 jusitfyContent: "center",
+                alignItems: "center",
                 height: "100%",
               }}
             >
