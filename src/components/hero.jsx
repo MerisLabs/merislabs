@@ -53,7 +53,7 @@ const HeroSection = () => {
           wildest dreams!!
           <br />
           <br />
-          You'll find below a few projects to show what we can achieve
+          You will find below a few projects to show what we can achieve
           together!!
           <br />
           <br />
