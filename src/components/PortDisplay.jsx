@@ -3,11 +3,6 @@ import { Divider, Typography } from "@mui/material";
 import { Stack } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import Chip from "@mui/material/Chip";
 import { DisplayProjectType } from "./DisplayProjectType";
 
@@ -97,109 +92,8 @@ export function PortDisplay({ offerings }) {
       height="100%"
     >
       <Stack
-        direction="row"
-        spacing={5}
-        alignContent={"center"}
-        justifyContent={"center"}
-        width="100%"
-      >
-        {/* <FormControl sx={{ m: 1, width: "100%" }} fullWidth>
-          <InputLabel
-            fullWidth
-            id="demo-multiple-chip-label"
-            sx={{
-              color: "white",
-              fontSize: 13,
-            }}
-          >
-            FILTERS
-          </InputLabel>
-          <Select
-            fullWidth
-            labelId="demo-multiple-chip-label"
-            id="demo-multiple-chip"
-            multiple
-            value={personOption}
-            onChange={handleChange}
-            input={
-              <OutlinedInput
-                id="select-multiple-chip"
-                label="FILTERS"
-                style={{
-                  color: "white",
-                }}
-                sx={{
-                  "& .MuiOutlinedInput-notchedOutline": {
-                    borderColor: "white",
-                  },
-                  "&:hover .MuiOutlinedInput-notchedOutline": {
-                    borderColor: "white",
-                    // borderWidth: 0.1,
-                  },
-                  "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                    borderColor: "white",
-                    borderWidth: 0.1,
-                  },
-
-                  "& .MuiOutlinedInput-input": {
-                    color: "white",
-                    borderWidth: 0.1,
-                  },
-                  "&:hover .MuiOutlinedInput-input": {
-                    color: "white",
-                  },
-                  "&.Mui-focused .MuiOutlinedInput-input": {
-                    color: "white",
-                  },
-                  // label
-                  "& .MuiInputLabel-outlined": {
-                    color: "white",
-                  },
-                  "&:hover .MuiInputLabel-outlined": {
-                    color: "white",
-                  },
-                  // icon
-                  "& .MuiSvgIcon-root": {
-                    color: "white",
-                  },
-                }}
-              />
-            }
-            renderValue={(selected) => (
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                {selected.map((value, index) => (
-                  <Chip
-                    key={index}
-                    label={
-                      <Typography
-                        style={{ fontSize: 11, color: "white" }}
-                        variant="h6"
-                      >
-                        {value}
-                      </Typography>
-                    }
-                  />
-                ))}
-              </Box>
-            )}
-            MenuProps={MenuProps}
-          >
-            {options.map((option, index) => (
-              <MenuItem
-                key={index}
-                value={option}
-                style={getStyles(option, personOption, theme)}
-              >
-                {option}
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl> */}
-      </Stack>
-      <Stack
         w="100%"
         spacing={5}
-        // height="100vh"
         p={5}
         sx={{
           overflow: "scroll",
@@ -219,7 +113,6 @@ export function PortDisplay({ offerings }) {
             alignItems="center"
             justifyContent="center"
           >
-            {/* if a video use video, else use DisplayProjectType */}
             {project.video?.endsWith("mov") ||
             project.video?.endsWith("mp4") ? (
               <Box

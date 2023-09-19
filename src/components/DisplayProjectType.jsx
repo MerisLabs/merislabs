@@ -6,7 +6,7 @@ export const DisplayProjectType = ({ project }) => {
   }
 
   const videoType = project?.video.split(".")[1];
-  const imageSrc = `/images/${projec?.video}`;
+  const imageSrc = `/images/${project?.video}`;
   const videoSrc = `${project?.video}`;
 
   const imageStyle = {
