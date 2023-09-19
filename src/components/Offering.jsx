@@ -26,8 +26,8 @@ export function Offering({ offering }) {
       cursor="pointer"
     >
       <Stack
-        style={{ cursor: "pointer" }}
-        onClick={() => router.push(offering.url)}
+        // style={{ cursor: "pointer" }}
+        // onClick={() => router.push(offering.url)}
         spacing={2}
       >
         <Box
