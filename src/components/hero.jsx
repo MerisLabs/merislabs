@@ -44,7 +44,7 @@ const HeroSection = () => {
           textAlign="center"
         >
           {/* <LinkTree /> */}
-          Hi, <br /> I am Tomide. <br /> Welcome to MerisLabs.
+          Hi,<br /> I am Tomide. <br /> Welcome to MerisLabs.
           <br /> <br />
           For the past 4 years, I have built software for businesses across 4
           industries. <br />I am excited to learn more about your business
