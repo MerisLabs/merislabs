@@ -110,11 +110,11 @@ export function ShinnyBox({ children }) {
   return <ShinnyEffect>{children}</ShinnyEffect>;
 }
 
-export function TypewriterEffect({ children }: { children: string[] }) {
+export function TypewriterEffect({ textItems }: { textItems: string[] }) {
   return (
     <Typewriter
       options={{
-        strings: children,
+        strings: textItems,
         autoStart: true,
         loop: true,
       }}

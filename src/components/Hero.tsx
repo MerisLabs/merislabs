@@ -67,21 +67,22 @@ const HeroSection = () => {
             Hello there,
           </Typography>
           <Typography variant="body1">
-            I'm Tomide, and I extend a warm welcome to MerisLabs.
+            I am Tomide, and I extend a warm welcome to MerisLabs.
           </Typography>
           <Typography variant="body1">
-            Over the past 4 years, I've been crafting tailored software
+            Over the past 4 years, I have been crafting tailored software
             solutions for businesses across diverse industries. My mission is to
             understand your business inside out—your operations, model,
-            customers, and goals. Together, we'll harness the power of
-            cutting-edge technologies to turn your boldest dreams into reality.
+            customers, and goals. Together, we can harness the power of
+            cutting-edge technologies to turn your boldest business ideas into
+            reality.
           </Typography>
           <Typography variant="body1">
             Explore some of our impressive projects below that showcase the
             possibilities we can unlock together.
           </Typography>
           <Typography variant="body1">
-            Ready to take the next step? Let's talk!
+            Ready to take the next step? Let us talk!
           </Typography>
           <Typography variant="body1">
             <span>📞 Call: +234 818 192 7251</span>
@@ -129,7 +130,7 @@ const HeroSection = () => {
         </Typography>
         <Typography variant="h4">We have built for:</Typography>
         <TypewriterEffect
-          children={[
+          textItems={[
             "Fintechs: Dukka, QorePay",
             "Propertytech: Hiyalo, VerifyProp",
             "Legaltech: Jackson, Etti and Edu, Nigerian Institute of Chartered Arbitrators",
