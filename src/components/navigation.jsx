@@ -33,7 +33,7 @@ class NavItems {
 export const navItems = [
   new NavItems("Home", "/", []),
   new NavItems("Blog", "https://medium.com/@tomideadeoye", []),
-  new NavItems("About", "https://linktr.ee/tomideadeoye", []),
+  new NavItems("Links", "https://linktr.ee/tomideadeoye", []),
 ];
 
 export default function Navigation() {
@@ -51,15 +51,15 @@ export default function Navigation() {
       alignItems="center"
       spacing={3}
       sx={{ padding: "1rem 2rem" }}
+      position="sticky"
     >
       <Stack direction="row" spacing={3}>
         <Link href="/">
           <Box
             component="img"
-            src="/images/zyptologo.png"
+            src="/images/merislogo.png"
             alt="Vercel Logo"
-            width="auto"
-            height={60}
+            width={100}
           />
         </Link>
       </Stack>

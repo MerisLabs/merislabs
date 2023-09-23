@@ -20,16 +20,12 @@ export function Offering({ offering }) {
   return (
     <Stack
       height="100%"
-      p={10}
+      px={10}
       justifyContent="center"
       spacing={2}
       cursor="pointer"
     >
-      <Stack
-        // style={{ cursor: "pointer" }}
-        // onClick={() => router.push(offering.url)}
-        spacing={2}
-      >
+      <Stack spacing={2}>
         <Box
           component="img"
           src={`/images/${image}`}

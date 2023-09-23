@@ -18,6 +18,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/hero.jsx", "src/components/navigation.jsx", "src/theme.jsx", "src/components/MuiTabs.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/Hero.tsx",
+    "src/components/navigation.jsx",
+    "src/theme.jsx",
+    "src/components/MuiTabs.jsx"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,4 +1,4 @@
-class Project {
+export class Project {
   constructor(name, description, tooling, link, video) {
     this.name = name;
     this.description = description;
@@ -22,14 +22,14 @@ export const offerings = [
       new Project(
         "Candle Stick Chart",
         "A candlestick chart is a style of financial chart used to describe price movements of a security, derivative, or currency.  Each 'candlestick' typically shows one day, thus a one-month chart may show the 20 trading days as 20 candlesticks. Candlestick charts can also be built using intervals shorter or longer than one day.",
-        ["React", "Binance api", "Frontend"],
+        ["React", "Binance API", "Apex Charts", "Frontend"],
         "https://sisyphus-tomide.vercel.app/",
         "https://user-images.githubusercontent.com/55337742/241746561-b4bbc74e-9729-4285-bf09-e1d830ed323e.mp4"
       ),
       new Project(
         "QorePay Payment Gateway",
         "QorePay is a payment app that allows users to send and receive money from anywhere in the world. It also allows users to pay bills, buy airtime, and make transfers to bank accounts.",
-        ["React", "ExpressJs", "AWS", "Fullstack"],
+        ["React", "ChakraUI", "ExpressJs", "AWS", "Zendesk"],
         "https://qorepay.com/",
         "https://user-images.githubusercontent.com/55337742/268929386-345b9e34-a559-417e-b957-3f9971a77ecb.mp4"
       ),
@@ -43,16 +43,9 @@ export const offerings = [
       new Project(
         "UNICOM",
         `Project Unicom Project Unicom is an app developed for Unilever Nigeria PLC. to ensure compliance with regulatory obligations across various functions identified by Jackson, Etti and Edu. This GitHub repository serves as the documentation for the app and provides an overview of the project. \n Executive Summary Unilever Nigeria engaged Jackson, Etti & Edu (JEE) to develop a company-wide Compliance Manual and conduct a legal audit of its warehouses in Agbara. business across the eight functions.`,
-        ["React", "Firebase", "Fullstack"],
+        ["React", "Firebase", "Material Table", "Fullstack"],
         `https://unicomreport.netlify.app/`,
         "https://user-images.githubusercontent.com/55337742/241769519-0da29dbd-d2e7-49e0-a463-bd074a7c4e11.mp4"
-      ),
-      new Project(
-        "Whatsapp Math Solver Bot",
-        `A whatsapp bot that solves math problems. It uses the Twilio API to send and receive messages from whatsapp. It uses the Wolfram Alpha API to solve math problems. It uses the Google Cloud API to convert images to text. "`,
-        ["Python", "Twilio", "Wolfram Alpha", "Google Cloud"],
-        "https://mathcsolvetom.netlify.app/",
-        "https://user-images.githubusercontent.com/55337742/227046491-9e8cdf59-dafc-42f1-aacc-82a8dbd13015.mp4"
       ),
       new Project(
         "MVHQ Blog App",
@@ -64,12 +57,11 @@ export const offerings = [
 
       new Project(
         "Midland",
-        ["React"],
-        "Financial Services App | Nigeria",
+        `Menu items and options in a mobile app for a financial services application. It provides quick access to various features and functionalities offered by the app, including sending money, managing investments, applying for loans, using banking cards, reviewing transactions, exploring a marketplace, accessing settings, and logging out. Financial Services App | Nigeria`,
+        ["React", "MUI", "Frontend"],
         "https://github.com/tomideadeoye/midlandui",
         `https://user-images.githubusercontent.com/55337742/212472229-c9be4ecd-32ab-41da-bd71-184a6a901288.mp4`
       ),
-
       new Project(
         "DASH",
         "Money Transfer App | Nigeria",
@@ -220,3 +212,11 @@ export const offerings = [
 // 	"https://www.smartcontractresearch.org/t/research-summary-a-formal-specification-smart-contract-language-for-legally-binding-decentralized-autonomous-organizations/2425",
 // 	"smart contract language for daos.png"
 //   ),
+
+// new Project(
+//   "Whatsapp Math Solver Bot",
+//   `A whatsapp bot that solves math problems. It uses the Twilio API to send and receive messages from whatsapp. It uses the Wolfram Alpha API to solve math problems. It uses the Google Cloud API to convert images to text. "`,
+//   ["Python", "Twilio", "Wolfram Alpha", "Google Cloud"],
+//   "https://mathcsolvetom.netlify.app/",
+//   "https://user-images.githubusercontent.com/55337742/227046491-9e8cdf59-dafc-42f1-aacc-82a8dbd13015.mp4"
+// ),
