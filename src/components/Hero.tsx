@@ -150,7 +150,7 @@ const HeroSection = () => {
           Our expersise is describing your business model in code.
         </Typography>
       </Stack>
-      <Stack direction={{ xs: "column", md: "row" }}>
+      <Stack direction={{ xs: "column", md: "row" }} spacing={3}>
         {offerings?.map((offering, index) => (
           <Offering key={index} offering={offering} />
         ))}
